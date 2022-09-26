@@ -1,1 +1,263 @@
-/* You can add global styles to this file, and also import other style files */
+// Reset CSS
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+.container,
+.section {
+  margin: 0;
+  padding: 0;
+  font-family: "Fauna One", serif;
+}
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h2,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+h5,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+//   End
+
+:root {
+  --container-bg-color: #333;
+  // --left-bg-color: rgba(223, 39, 39, 0.7);
+  --left-bg-color: rgba(63, 81, 181, 0.7);
+  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --yellow-color: #ffd65e;
+  --dark-contrast: #1f2c30;
+  --title-size: 10rem;
+  --letter-spacing: 0.275rem;
+  --title-line-height: 14vh;
+  --logo-length: 8.5rem;
+  --mobile-logo-length: 5rem;
+  --yellow-border-width: 12vw;
+  --mobile-border-width: 12vw;
+  --horizontal-line-height: 1.22rem;
+}/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.redirect:hover, .formGroup input:hover {
+  cursor: pointer;
+}
+
+re-captcha.is-invalid > div {
+  border: 1px solid #dc3545 !important;
+  border-radius: 0.2rem;
+}
+
+.loginFormField .mat-form-field-outline {
+  bottom: 2.5rem !important;
+}
+
+.loginFormField .mat-form-field-infix {
+  padding-bottom: 0;
+}
+.loginFormField .mat-form-field-wrapper {
+  margin: 0 !important;
+  padding: 0;
+}
+.loginFormField .mat-form-field-subscript-wrapper {
+  margin-top: -1rem;
+}
+
+nav {
+  background-color: inherit;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+  // min-height: 57vh !important;
+  // min-width: 31vw;
+  // padding: 0;
+}
+
+.mat-tab-header {
+  // display: none !important;
+}
+
+.displayTable {
+  margin: 0 5rem 0;
+}
+
+.pink-bg {
+  background-color: #E5005C;
+  color: whitesmoke;
+}
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  color: goldenrod;
+  margin-bottom: 4rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: none;
+}
+
+mat-icon:hover {
+  cursor: pointer;
+  color: goldenrod;
+}
+
+mat-icon {
+  font-size: 2rem;
+}
+
+.header-wrapper div.current {
+  text-decoration: none;
+  border-bottom: 0.2rem solid goldenrod;
+}
+
+.mat-tab-group#projectTabGroup {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 100vw;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  color: black;
+}
+.panel-class {
+  width: '13vw';
+}
+
+.mat-dialog-container {
+  background: transparent;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 599px) {
+  .panel-class {
+    width: '100vw';
+  }
+  .mat-tab-header .mat-tab-labels {
+    margin-top:0;
+  }
+}
+

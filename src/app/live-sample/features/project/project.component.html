@@ -1,0 +1,89 @@
+<section id="project-section" class="animate__animated">
+  <mat-tab-group id="projectTabGroup" mat-align-tabs="center">
+    <mat-tab class="inner-tabs" label="Capital One">
+      <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <mat-slide-toggle class="project-toggle" (change)="toggleSlideCapitalOne()"></mat-slide-toggle>
+        <div class="toggle-text"> {{displayToggleCapitalOne()}}</div>
+        <mat-tab-group class="hidden-tab-group" mat-align-tabs="center" [selectedIndex]="setProjectIndexCapitalOne()">
+          <mat-tab class="hidden-tabs" label="Capital-One">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <iframe id="stackBlitzProject"
+                src="https://stackblitz.com/edit/auto-workflow-capital-one?embed=1&file=src/app/app.component.ts">
+              </iframe>
+            </div>
+          </mat-tab>
+          <mat-tab class="hidden-tabs" label="Capital-One-Infrastucture">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/capital-one-poster.png" />
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </mat-tab>
+    <mat-tab class="inner-tabs" label="Auction">
+      <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <mat-slide-toggle class="project-toggle" (change)="toggleSlideAuction()"></mat-slide-toggle>
+        <div class="toggle-text"> {{displayToggleAuction()}}</div>
+        <mat-tab-group class="hidden-tab-group" mat-align-tabs="center" [selectedIndex]="setProjectIndexAuction()">
+          <mat-tab class="hidden-tabs" label="Football-Auction">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/ff2-poster.png" />
+            </div>
+          </mat-tab>
+          <mat-tab class="hidden-tabs" label="Football-Auction-Infrastucture">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/ff2-diagram.png" />
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </mat-tab>
+    <mat-tab class="inner-tabs" label="Stocks">
+      <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <mat-slide-toggle class="project-toggle" (change)="toggleSlideStock()"></mat-slide-toggle>
+        <div class="toggle-text"> {{displayToggleStock()}}</div>
+        <mat-tab-group class="hidden-tab-group" mat-align-tabs="center" [selectedIndex]="setProjectIndexStock()">
+          <mat-tab class="hidden-tabs" label="Stock">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/stock-poster.png" />
+            </div>
+          </mat-tab>
+          <mat-tab class="hidden-tabs" label="Stock-Infrastucture">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/stock-diagram.png" />
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </mat-tab>
+    <mat-tab class="inner-tabs" label="Dating">
+      <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <mat-slide-toggle class="project-toggle" (change)="toggleSlideDating()"></mat-slide-toggle>
+        <div class="toggle-text"> {{displayToggleDating()}}</div>
+        <mat-tab-group class="hidden-tab-group" mat-align-tabs="center" [selectedIndex]="setProjectIndexDating()">
+          <mat-tab class="hidden-tabs" label="Stock">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/dating-poster.png" />
+            </div>
+          </mat-tab>
+          <mat-tab class="hidden-tabs" label="Stock-Infrastucture">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/dating-diagram.png" />
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </mat-tab>
+    <mat-tab class="inner-tabs" label="Chrome Extension">
+      <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <mat-tab-group class="hidden-tab-group">
+          <mat-tab class="hidden-tabs" label="chrome">
+            <div class="flex-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <img class="poster" src="../../../../../assets/img/project/img-2/ff-chrome-extension.png" />
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</section>

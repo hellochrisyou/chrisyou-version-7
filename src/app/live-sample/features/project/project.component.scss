@@ -1,0 +1,179 @@
+section#project-section {
+  background-image: url("../../../../assets/img/bg/bg-project.jpg");
+  background-size: cover;
+  height: 95vh;
+  top: 0;
+}
+
+
+.mat-card-header {
+  justify-content: center;
+}
+
+.mat-card-subtitle {
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Styles for the active tab label */
+#projectTabGroup .mat-tab-labels,
+#projectTabGroup .mat-tab-label.mat-tab-label-active,
+#projectTabGroup .mat-tab-group,
+#projectTabGroup .mat-tab-label,
+#projectTabGroup .mat-tab-header,
+#projectTabGroup .mat-tab-label-container,
+#projectTabGroup .mat-tab-list {
+  background-color: transparent !important;
+  color: black;
+}
+
+.mat-card-header {
+  text-align: center;
+}
+
+.mat-card-header .mat-card-subtitle {
+  font-weight: 475;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.mat-tab-body-content {
+  overflow: hidden !important;
+  z-index: 22;
+}
+
+.mat-tab-label.inner-tabs .mat-tab-label-content {
+  color: black;
+  font-weight: 800;
+}
+
+div.image-link,
+a {
+  color: blue;
+  font-weight: 800;
+  text-align: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+#project-section h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+mat-card.project-card {
+  height: auto;
+  margin-top: 10vh;
+  width: 40%;
+}
+
+#img-s3fs {
+  margin: 0 auto;
+  width: 20vw;
+}
+
+.poster {
+  width: 50vw;
+}
+
+#projectTabGroup .hidden-tab-group .mat-tab-header {
+  display: none;
+}
+
+#projectTabGroup .hidden-tab-group {
+  min-width: 100%;
+}
+
+iframe#stackBlitzProject {
+  margin-top: 4rem;
+  min-height: 35vw;
+  width: 75%;
+}
+
+.toggle-text {
+  color: black;
+  font-style: oblique;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 719px) {
+  mat-tab-group {
+    margin-top: 4vw;
+  }
+
+  mat-tabs .mat-tab-label {
+    width: 60px !important;
+  }
+
+  mat-card.project-card {
+    height: 70%;
+    margin-top: 10vh;
+    margin: 2vw auto;
+    max-width: 550px;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  mat-card {
+    min-width: 675px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .mat-tab-label .mat-tab-label-content {
+    font-size: 0.75rem;
+  }
+
+  #projectTabGroup {
+    margin-top: 3rem;
+  }
+
+  iframe#stackBlitzProject {
+    margin-top: 1rem;
+    min-height: 57vh;
+    width: 85%;
+  }
+
+  .poster {
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  iframe#stackBlitzProject {
+    min-height: 65vh;
+    width: 90%;
+  }
+
+  .poster {
+    width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  iframe#stackBlitzProject {
+    margin-top: 1rem;
+    min-height: 50vh;
+    width: 90%;
+  }
+
+  .poster {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .poster {
+    width: 45vw;
+  }
+}

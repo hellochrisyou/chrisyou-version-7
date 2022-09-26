@@ -1,0 +1,29 @@
+<header class="navbar-fixed">
+  <mat-toolbar color="primary">
+    <div class="header-wrapper"fxLayout="row" fxLayoutAlign="start center">
+      <mat-icon fxFlex="20" (click)="navigateHome()" >home</mat-icon>
+      <span fxFlex fxLayout="row" fxLayoutAlign="space-around center">
+      <div [ngClass]="currentIndex === 1 ? 'current' : ''" (click)="navigateSkills()">Skills</div>
+      <div [ngClass]="currentIndex === 2 ? 'current' : ''" (click)="navigateProjects()">Projects</div>
+      <div [ngClass]="currentIndex === 3 ? 'current' : ''" (click)="navigatePrevVersions()">Previous Versions</div>
+    </span>
+    </div>
+  </mat-toolbar>
+</header>
+
+<main class="valign-wrapper">
+  <span class="container grey-text text-lighten-1 ">
+    <main>
+      <ng-container *ngIf="currentIndex===1" class="portfolio-wrapper">
+        <skills></skills>
+      </ng-container>
+      <ng-container *ngIf="currentIndex===2">
+        <project></project>
+      </ng-container>
+      <ng-container *ngIf="currentIndex===3">
+        <prev-version></prev-version>
+      </ng-container>
+    </main>
+  </span>
+</main>
+

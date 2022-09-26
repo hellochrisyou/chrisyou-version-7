@@ -1,0 +1,34 @@
+<body class="welcome" class="animate__animated"
+  [ngClass]="{'animate__fadeOut': routingStateService.isFadeOut === true, ' animate__fadeIn': routingStateService.isFadeOut===false}">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+  <header class="navbar-fixed">
+    <mat-toolbar color="primary">
+      <div class="header-wrapper"fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon fxFlex="20" (click)="navigateHome()" >home</mat-icon>
+        <span fxFlex fxLayout="row" fxLayoutAlign="space-around center">
+        <div [ngClass]="currentIndex === 1 ? 'current' : ''" (click)="navigateBackground()">Experience</div>
+        <div [ngClass]="currentIndex === 2 ? 'current' : ''" (click)="navigateMusic()">Music</div>
+        <div [ngClass]="currentIndex === 3 ? 'current' : ''" (click)="navigateContact()">Contact</div>
+      </span>
+      </div>
+    </mat-toolbar>
+  </header>
+
+  <main class="valign-wrapper">
+    <span class="container grey-text text-lighten-1 ">
+      <main>
+        <ng-container *ngIf="currentIndex===1">
+          <background></background>
+        </ng-container>
+        <ng-container *ngIf="currentIndex===2">
+          <music></music>
+        </ng-container>
+        <ng-container *ngIf="currentIndex===3">
+          <contact></contact>
+        </ng-container>
+      </main>
+    </span>
+  </main>
+
+</body>

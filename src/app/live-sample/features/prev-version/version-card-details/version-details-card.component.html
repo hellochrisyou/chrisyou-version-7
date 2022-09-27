@@ -13,44 +13,11 @@
         <div class="indent"> <span class="string" *ngFor="let featureItem of currentVersionDetailsCard.features; let i = index">'{{featureItem}}'
           <span *ngIf="i !== currentVersionDetailsCard.features!.length - 1">,</span></span></div><div class="indent"> <span>{{ ']' }}</span> </div>
         <div>{{ '}' }}</div>
+        <div class="button-effect" fxLayout="column" fxLayoutAlign="center center" >
+          <a fxFlex class="effect effect-5" href="{{versionLink}}" target = "_blank" matTooltip="{{versionLink}}">Visit Webpage</a>
+        </div>
         <div echarts [options]="options" style="height:14rem"></div>
     </code>
     </div>
   </div>
 </section>
-
-<!-- <div class="details-wrapper mat-elevation-z12">
-  <div class="card" fxLayout="column" fxLayoutAlign="start stretch">
-    <section fxFlex class="card-details">
-      <div fxLayout="row" fxLayoutAlign="space-evenly center">
-        <div fxFlex class="value-type-wrapper">
-          <div class="value">{{currentVersionDetailsCard.linesOfCode}}</div>
-          <div class="type">Code Line Count</div>
-        </div>
-        <div fxFlex class="value-type-wrapper">
-          <div class="value">{{currentVersionDetailsCard.hoursWorked}}</div>
-          <div class="type">Time Invested</div>
-        </div>
-        <div fxFlex class="value-type-wrapper">
-          <div class="value">{{currentVersionDetailsCard.size}}</div>
-          <div class="type">Size</div>
-        </div>
-      </div>
-    </section>
-    <div fxFlex>
-    <h5 class="libraries-title">External Libraries</h5>
-    <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-      <mat-chip *ngoFr="let libraryItem of currentVersionDetailsCard.externalLibraries" class="pink-bg mat-elevation-z10">{{libraryItem}}</mat-chip>
-    </mat-chip-list>
-  </div>
-  <div fxFlex>
-    <h5 class="features-title">Features</h5>
-    <mat-chip-list fxLayout="row" fxLayoutAlign="center center">
-      <mat-chip *ngFor="let featureItem of currentVersionDetailsCard.features" class="pink-bg mat-elevation-z10">{{featureItem}}</mat-chip>
-    </mat-chip-list>
-  </div>
-  <div fxLayout="column" fxLayoutGap="20px" *ngIf="options">
-    <div echarts [options]="options"></div>
-  </div>
- </div>
-</div> -->

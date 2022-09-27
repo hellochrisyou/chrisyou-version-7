@@ -1,15 +1,19 @@
-<header class="navbar-fixed">
-  <mat-toolbar color="primary">
-    <div class="header-wrapper"fxLayout="row" fxLayoutAlign="start center">
-      <mat-icon fxFlex="20" (click)="navigateHome()" >home</mat-icon>
-      <span fxFlex fxLayout="row" fxLayoutAlign="space-around center">
-      <div [ngClass]="currentIndex === 1 ? 'current' : ''" (click)="navigateSkills()">Skills</div>
-      <div [ngClass]="currentIndex === 2 ? 'current' : ''" (click)="navigateProjects()">Projects</div>
-      <div [ngClass]="currentIndex === 3 ? 'current' : ''" (click)="navigatePrevVersions()">Previous Versions</div>
-    </span>
-    </div>
-  </mat-toolbar>
-</header>
+<body class="welcome animate__animated"
+  [ngClass]="{'animate__fadeOut': routingStateService.isFadeOut === true, ' animate__fadeIn': routingStateService.isFadeOut===false}">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+  <header class="navbar-fixed">
+    <mat-toolbar color="primary">
+      <div class="header-wrapper"fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon fxFlex="20" (click)="navigateHome()" >home</mat-icon>
+        <span fxFlex fxLayout="row" fxLayoutAlign="space-around center">
+        <div [ngClass]="currentIndex === 1 ? 'current' : ''" (click)="navigateSkills()">Skills</div>
+        <div [ngClass]="currentIndex === 2 ? 'current' : ''" (click)="navigateProjects()">Projects</div>
+        <div [ngClass]="currentIndex === 3 ? 'current' : ''" (click)="navigatePrevVersions()">Previous Versions</div>
+      </span>
+      </div>
+    </mat-toolbar>
+  </header>
 
 <main class="valign-wrapper">
   <span class="container grey-text text-lighten-1 ">

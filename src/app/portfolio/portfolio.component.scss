@@ -78,7 +78,7 @@ ul li a {
 }
 
 .row {
-  background-color: #3F51B5;
+  background: #921752;
 }
 
 li a {
@@ -122,7 +122,7 @@ main {
 }
 
 mat-toolbar {
-  background-color: #3F51B5;
+  background: #921752;
   box-shadow: none !important;
   left: 0;
   position: fixed;
@@ -275,7 +275,6 @@ a {
   font-weight: 800;
 }
 
-
 //Splash Screen
 
 main {
@@ -289,6 +288,10 @@ h1.title,
   font-family: 'Architects Daughter', cursive;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.mat-toolbar.mat-primary {
+  background: #921752;
 }
 
 /* start welcome animation */
@@ -317,7 +320,7 @@ body.welcome {
 }
 
 .welcome #welcome {
-  background: #3F51B5;
+  background: #921752;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -399,7 +402,7 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background: #3F51B5;
+    background: #921752;
     top: 100%;
   }
 
@@ -409,22 +412,22 @@ body.welcome {
 
   100% {
     top: 50%;
-    background: #3F51B5;
+    background: #921752;
   }
 }
 
 @keyframes materia {
   0% {
-    background: #3F51B5;
+    background: #921752;
   }
 
   50% {
-    background: #3F51B5;
+    background: #921752;
     top: 26px;
   }
 
   100% {
-    background: #3F51B5;
+    background: #921752;
     border-radius: 0px;
     height: 64px;
     top: 26px;

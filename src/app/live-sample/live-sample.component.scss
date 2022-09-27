@@ -78,7 +78,7 @@ ul li a {
 }
 
 .row {
-  background-color: #3F51B5;
+  background: #1C4B7F;
 }
 
 li a {
@@ -122,7 +122,7 @@ main {
 }
 
 mat-toolbar {
-  background-color: #3F51B5;
+  background: #222146;
   box-shadow: none !important;
   left: 0;
   position: fixed;
@@ -317,7 +317,7 @@ body.welcome {
 }
 
 .welcome #welcome {
-  background: #3F51B5;
+  background-color: #222146;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -329,6 +329,10 @@ body.welcome {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 200;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: #222146;
 }
 
 /* moveIn */
@@ -399,7 +403,8 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-    background: #3F51B5;
+    background: #222146;
+
     top: 100%;
   }
 
@@ -409,22 +414,22 @@ body.welcome {
 
   100% {
     top: 50%;
-    background: #3F51B5;
+    background: #222146;
   }
 }
 
 @keyframes materia {
   0% {
-    background: #3F51B5;
+    background: #222146;
   }
 
   50% {
-    background: #3F51B5;
+    background: #222146;
     top: 26px;
   }
 
   100% {
-    background: #3F51B5;
+    background: #222146;
     border-radius: 0px;
     height: 64px;
     top: 26px;
@@ -564,5 +569,7 @@ body.welcome {
     background-color: transparent;
     margin-top: 0rem !important;
   }
+
+
 }
 

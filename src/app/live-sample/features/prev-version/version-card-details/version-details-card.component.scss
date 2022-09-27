@@ -1,4 +1,59 @@
- h5 {
+a {
+  color: goldenrod;
+  height: 2rem;
+  font-weight: 300;
+}
+
+.button-effect {
+  height: 2rem;
+}
+
+.effect {
+  height: 2rem;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: goldenrod;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-top: 2px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:before {
+  content: "";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background: #1d1f20;
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 30px;
+}
+.effect.effect-5:hover:before {
+  transform: scale(1, 1);
+  text-indent: 0;
+}
+
+h5 {
   color: #E5005C;
   font-size: 0.7rem;
   font-weight: 800;
@@ -17,7 +72,7 @@ section {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  height: 31rem;
+  min-height: 35rem;
   justify-content: center;
   line-height: 1.5;
   position: relative;
@@ -32,19 +87,19 @@ code, .card-wrapper {
 
 .card-wrapper {
   height: min-content;
-  min-height: 13rem;
+  min-height: 35rem;
   perspective: 150rem;
   position: absolute;
   top: 0;
   width: 22frem;
 }
 .card-details {
-  align-items: start;
+  align-items: center;
   backface-visibility: hidden;
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   display: flex;
-  height: 27rem;
+  min-height: 35rem;
   justify-content: center;
   margin: auto;
   overflow: hidden;
@@ -55,8 +110,8 @@ code, .card-wrapper {
 }
 
 .card-details {
-  background: linear-gradient(-45deg, #101010, #2c3e50);
-  height: 31rem;
+  background: #1d1f20;
+  max-height: 33rem;
 }
 .card-details:after {
   color: #11181f;

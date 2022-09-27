@@ -3,7 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BaseAnimate } from 'src/app/animations/base-animate';
 import { RoutingStateService } from 'src/app/core/service/routing-state.service';
 import { VersionDetails, VersionDialogData } from 'src/app/shared/models/interface';
-import { HYDRATE_VERSION_DETAILS_CARD, HYDRATE_VERSION_PIE_DATA } from './util/hydrate-version-details-card.util';
+import { HYDRATE_VERSION_DETAILS_CARD, HYDRATE_VERSION_LINK, HYDRATE_VERSION_PIE_DATA } from './util/hydrate-version-details-card.util';
 
 @Component({
   selector: 'version-card-details',
@@ -16,7 +16,7 @@ export class VersionCardDetailsComponent extends BaseAnimate implements OnInit {
 
   options: any;
   chartData: any[] = [];
-
+  versionLink = '';
 
   constructor(
     protected override routingStateService: RoutingStateService,
@@ -78,6 +78,7 @@ export class VersionCardDetailsComponent extends BaseAnimate implements OnInit {
 
   setData(): void {
     this.chartData = HYDRATE_VERSION_PIE_DATA(this.data.versionNum);
+    this.versionLink = HYDRATE_VERSION_LINK(this.data.versionNum);
   }
 
 }

@@ -229,3 +229,30 @@ export const HYDRATE_VERSION_PIE_DATA = (versionNum: number): Array<Array<string
   }
   return tmpPieDataArray;
 }
+
+export const HYDRATE_VERSION_LINK = (versionNum: number): string => {
+  let tmpStr = '';
+  switch (versionNum) {
+    case 1: {
+      tmpStr = 'http://www.1st-version.chrisyou.com';
+      break;
+    }
+    case 2: {
+      tmpStr = 'http://www.2nd-version.chrisyou.com';
+      break;
+    }
+    case 3: {
+      tmpStr = 'http://www.3rd-version.chrisyou.com';
+      break;
+    }
+    case 4: {
+      tmpStr = 'http://www.4th-version.chrisyou.com';
+      break;
+    }
+    case 5: {
+      tmpStr = 'http://www.5th-version.chrisyou.com';
+      break;
+    }
+  }
+  return tmpStr;
+}

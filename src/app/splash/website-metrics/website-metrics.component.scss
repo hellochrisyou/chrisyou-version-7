@@ -1,0 +1,39 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 250;
+}
+
+section {
+  width: 100%;
+}
+
+section mat-tab-group.metrics-tab-group {
+  height: 98%;
+}
+
+.mat-radio-group {
+  margin: 2rem auto;
+  position: relative;
+}
+
+div.div-wrapper {
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+div.data-wrapper, img {
+  width: 94%;
+  height: 100%;
+}
+
+img {
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+}
+
+a:hover {
+  cursor: pointer;
+}

@@ -340,7 +340,7 @@ code, .card-wrapper {
   padding: 1rem;
   position: absolute;
   transition: 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
-  width: 350px;
+  width: 375px;
 }
 
 .card-details {
@@ -351,30 +351,29 @@ code, .card-wrapper {
 }
 .card-wrapper .line-numbers > div {
   opacity: 0.15;
-  padding: 2.5px 0;
+  height: 1.5rem;
 }
-.card-wrapper code, .card-wrapper .line-numbers {
+.card-wrapper code {
   color: whitesmoke;
-  width: initial;
-  margin-left: 1rem;
+  width: 375px;
+  margin-left: 2rem;
 }
+
+.card-wrapper .line-numbers {
+  width: 0.4rem;
+  color: whitesmoke;
+  float:left
+}
+
 .card-wrapper .indent {
-  padding-left: 30px;
-  height: 1.65rem;
+  padding-left: 1rem;
+  height: 1.5rem;
 }
 
-.indent * {
-  float: left;
+.first-line {
+  height: 1.5rem;
 }
 
-.card-wrapper .indent2 {
-  padding-left: 60px;
-  height: 1.65rem;
-}
-
-.indent2 * {
-  float: left;
-}
 .card-wrapper .operator {
   color: #4dd0e1;
 }
@@ -396,11 +395,6 @@ code, .card-wrapper {
 .card-wrapper .boolean {
   color: #4dd0e1;
 }
-
-.first-line {
-  float: left;
-}
-
 
 @media screen and (min-width: 768px) {
   .timeline .swiper-slide::after {
@@ -428,7 +422,7 @@ code, .card-wrapper {
   .timeline .swiper-slide .timeline-title {
     font-size: 46px;
     margin: 0;
-    color: whitesmoke;
+    color: lightgray;
   }
 
   .timeline .swiper-pagination {

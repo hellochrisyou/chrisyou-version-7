@@ -5,7 +5,6 @@
         <span class="variable">const </span><span class="function">aboutProjectVersion{{data.versionNum}} </span><span class="operator">{{ '=' }} </span><span>{{ '{' }}</span>
         <div class="indent"> <span class="property">numberOfLinesOfCode</span><span class="operator">{{':'}} </span><span class="string">{{currentVersionDetailsCard.linesOfCode}}</span><span>{{','}}</span></div>
         <div class="indent"> <span class="property">timeInvested</span><span class="operator">{{':'}} </span><span class="string">{{currentVersionDetailsCard.hoursWorked}}</span></div>
-        <div class="indent"> <span class="property">productionFileSize</span><span class="operator">{{':'}} </span><span class="string">{{currentVersionDetailsCard.size}}</span></div>
         <div class="indent"> <span class="property">externalLibraries</span><span class="operator">{{':'}} </span><span>{{ '[' }}</span></div>
         <div class="indent"> <span class="string" *ngFor="let libraryItem of currentVersionDetailsCard.externalLibraries; let i = index">'{{libraryItem}}'
           <span *ngIf="i !== currentVersionDetailsCard.externalLibraries!.length - 1">,</span></span></div><div class="indent"> <span>{{ ']' }}</span> </div>

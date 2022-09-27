@@ -25,7 +25,37 @@ h1:after {
   background: #fff;
   transition: 500ms all ease-in-out;
 }
-
+a.metrics {
+  display: block;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  width: 175px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a.metrics:before {
+  content: "";
+  background: #fff;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms all ease-in-out;
+}
+a.metrics:hover:before {
+  height: 4px;
+}
 a.cta {
   display: block;
   position: absolute;
@@ -73,7 +103,7 @@ a.cta:hover:before {
 }
 .container .one-half.left {
   left: 0;
-  background: url("http://andrewerrico.com/jura-panorama.jpg") center center no-repeat;
+  background: url("../../assets/img/splash/splash-1.jpg") center center no-repeat;
   background-size: cover;
 }
 .container .one-half.left:before {
@@ -85,7 +115,7 @@ a.cta:hover:before {
 }
 .container .one-half.right {
   right: 0;
-  background: url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b") center center no-repeat;
+  background: url("../../assets/img/splash/splash-2.jpg") center center no-repeat;
   background-size: cover;
 }
 .container .one-half.right:before {

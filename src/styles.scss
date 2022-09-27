@@ -115,7 +115,6 @@ video {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 //   End
 
 :root {
@@ -128,13 +127,6 @@ video {
   --hover-width: 75%;
   --other-width: 25%;
   --speed: 1000ms;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
-:root {
   --yellow-color: #ffd65e;
   --dark-contrast: #1f2c30;
   --title-size: 10rem;
@@ -145,17 +137,15 @@ body {
   --yellow-border-width: 12vw;
   --mobile-border-width: 12vw;
   --horizontal-line-height: 1.22rem;
-}/* You can add global styles to this file, and also import other style files */
+}
 
 body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
+  -webkit-fot-smoothing: antialiased;
 }
 
-html,
-body {
-  height: 100%;
-}
+
 
 * {
   box-sizing: border-box;
@@ -163,26 +153,6 @@ body {
 
 .redirect:hover, .formGroup input:hover {
   cursor: pointer;
-}
-
-re-captcha.is-invalid > div {
-  border: 1px solid #dc3545 !important;
-  border-radius: 0.2rem;
-}
-
-.loginFormField .mat-form-field-outline {
-  bottom: 2.5rem !important;
-}
-
-.loginFormField .mat-form-field-infix {
-  padding-bottom: 0;
-}
-.loginFormField .mat-form-field-wrapper {
-  margin: 0 !important;
-  padding: 0;
-}
-.loginFormField .mat-form-field-subscript-wrapper {
-  margin-top: -1rem;
 }
 
 nav {
@@ -194,10 +164,6 @@ nav {
   // min-height: 57vh !important;
   // min-width: 31vw;
   // padding: 0;
-}
-
-.mat-tab-header {
-  // display: none !important;
 }
 
 .displayTable {
@@ -247,6 +213,11 @@ mat-icon {
   width: '13vw';
 }
 
+.metrics-dialog {
+  height: 100vh;
+  background-color: white;
+}
+
 .mat-dialog-container {
   background: transparent;
   box-shadow: none;
@@ -254,6 +225,27 @@ mat-icon {
 
 .mat-slide-toggle {
   margin-top: 2rem;
+}
+
+section mat-tab-group.metrics-tab-group .mat-tab-body {
+  overflow: hidden;
+}
+
+section mat-tab-group.metrics-tab-group div.mat-tab-body-wrapper{
+  height: 87% !important;
+}
+
+section mat-tab-group.metrics-tab-group .mat-tab-header {
+  display: none;
+
+}
+
+mat-tab-group.metrics-tab-group {
+  overflow: hidden;
+}
+
+.mat-radio-group .mat-radio-button.metrics-radio-btn {
+  padding-left: 9%;
 }
 
 @media only screen and (max-width: 599px) {

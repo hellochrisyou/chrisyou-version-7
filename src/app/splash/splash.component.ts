@@ -1,6 +1,8 @@
+import { WebsiteMetricsComponent } from './website-metrics/website-metrics.component';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { RoutingStateService } from '../core/service/routing-state.service';
+import { MatDialog } from '@angular/material/dialog';
 declare var $: any;
 
 @Component({
@@ -13,6 +15,7 @@ export class SplashComponent implements OnInit {
   currentIndex = 0;
 
   constructor(
+    public dialog: MatDialog,
     private router: Router,
     private routingStateService: RoutingStateService,
   ) { }
@@ -52,5 +55,12 @@ export class SplashComponent implements OnInit {
     }, 500);
   }
 
-
+  openWebsiteMetrics(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(WebsiteMetricsComponent, {
+      width: '31rem',
+      panelClass: 'metrics-dialog',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
 }

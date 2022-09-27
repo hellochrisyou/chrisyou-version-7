@@ -1,3 +1,4 @@
+import { WebsiteMetricsComponent } from './splash/website-metrics/website-metrics.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
@@ -14,6 +15,7 @@ import { SplashComponent } from './splash/splash.component';
   declarations: [
     AppComponent,
     SplashComponent,
+    WebsiteMetricsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { SplashComponent } from './splash/splash.component';
       useValue: {}
     },
   ],
-  entryComponents: [],
+  entryComponents: [WebsiteMetricsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

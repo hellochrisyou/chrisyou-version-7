@@ -52,7 +52,7 @@ body {
 .timeline .swiper-slide {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   color: #fff;
   overflow: hidden;
   position: relative;
@@ -351,6 +351,12 @@ body {
   text-decoration:underline;
 }
 
+.slide-01 {
+  background-image: url("../../../../assets/img/background/background-capital1.png")
+}
+.slide-02 {
+  background-image: url("../../../../assets/img/background/background-freddie.png")
+}
 .slide-0 {
   background-image: url("../../../../assets/img/background/background-spatial.jpg")
 }

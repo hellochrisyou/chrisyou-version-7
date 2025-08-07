@@ -1,10 +1,13 @@
 import { WebsiteMetricsComponent } from './website-metrics/website-metrics.component';
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
 import { RoutingStateService } from '../core/service/routing-state.service';
 import { MatDialog } from '@angular/material/dialog';
 declare var $: any;
+import { Component, OnInit } from '@angular/core';
 
+import { TimelineMax, Linear, TweenMax } from '../../assets/js/gsap.js';
+import * as drawSvg from '../../assets/js/DrawSVGPlugin3.min.js';
+import * as b from '../../assets/js/MotionPathPlugin.min.js';
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.component.html',
@@ -13,7 +16,6 @@ declare var $: any;
 export class SplashComponent implements OnInit {
 
   currentIndex = 0;
-
   constructor(
     public dialog: MatDialog,
     private router: Router,
@@ -21,6 +23,12 @@ export class SplashComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
+    TweenMax.set("#path-love", { drawSvg: "0% 0%" });
+    let tl = new TimelineMax({ delay: 1, repeat: false });
+    tl.set("#love", { autoAlpha: 1 });
+    tl.to("#path-love", 5, { drawSvg: "100%", ease: Linear.easeNone});
+
     let $l = $('.left')
     let $r = $('.right')
 

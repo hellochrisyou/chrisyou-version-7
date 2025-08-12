@@ -6,8 +6,6 @@ declare var $: any;
 import { Component, OnInit } from '@angular/core';
 
 import { TimelineMax, Linear, TweenMax } from '../../assets/js/gsap.js';
-import * as drawSvg from '../../assets/js/DrawSVGPlugin3.min.js';
-import * as b from '../../assets/js/MotionPathPlugin.min.js';
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.component.html',

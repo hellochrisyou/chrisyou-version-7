@@ -31,7 +31,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
-            "scripts": ["./src/assets/js/gsap.js", "./src/assets/js/MotionPathPlugin.min.js", "./src/assets/js/DrawSVGPlugin3.min.js"]
+            "scripts": ["./src/assets/js/gsap.js", "./src/assets/js/MotionPathPlugin.min.js"]
           },
           "configurations": {
             "production": {
